@@ -1,3 +1,5 @@
 # Image classifier - using classifier
 
 # TODO 0: add time measuring to code - done and tested with sleep function
+
+# TODO 1: add command line arguments parsing - done and tested with examples (no arguments, single/multiple/all arguments)
