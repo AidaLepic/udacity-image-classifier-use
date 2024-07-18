@@ -67,7 +67,35 @@ def calculates_results_stats(results_dic):
                      and the value is the statistic's value. See comments above
                      and the classroom Item XX Calculating Results for details
                      on how to calculate the counts and statistics.
-    """        
-    # Replace None with the results_stats_dic dictionary that you created with 
-    # this function 
-    return None
+    """         
+    results_stats_dic = dict()
+    results_stats_dic['n_images'] = len(results_dic)
+    results_stats_dic['n_dogs_img'] = 0
+    results_stats_dic['n_notdogs_img'] = 0
+
+    correct_breed_count = 0
+    correct_dog_count = 0
+    correct_not_dog_count = 0
+
+    for image in results_dic:
+        result_list = results_dic[image]
+        breed_match = result_list[2]
+        label_dog = result_list[3]
+        classification_dog = result_list[4]
+
+        if label_dog:
+             results_stats_dic['n_dogs_img'] += 1
+             if classification_dog:
+                 correct_dog_count += 1
+                 if breed_match:
+                     correct_breed_count += 1
+        else:
+            results_stats_dic['n_notdogs_img'] += 1
+            if not classification_dog:
+                correct_not_dog_count += 1
+
+    results_stats_dic['pct_correct_dogs'] = (correct_dog_count / results_stats_dic['n_dogs_img']) * 100
+    results_stats_dic['pct_correct_notdogs'] = (correct_not_dog_count / results_stats_dic['n_notdogs_img']) * 100
+    results_stats_dic['pct_correct_breed'] = (correct_breed_count / results_stats_dic['n_dogs_img']) * 100
+
+    return results_stats_dic

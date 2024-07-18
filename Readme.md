@@ -9,3 +9,5 @@
 # TODO 3: clasify images and add classifier results to result_dic - done and tested
 
 # TODO 4: add check is-a-dog for both label and classification - done and tested
+
+# TODO 5: add statistic calculation for match/is-a-dog match - done and tested
