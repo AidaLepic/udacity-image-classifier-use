@@ -41,7 +41,7 @@ def get_pet_labels(image_dir):
          index 0 = pet image label (string)
     """
     ## Retrieve the filenames from folder pet_images/
-    filename_list = listdir("pet_images/")
+    filename_list = listdir(image_dir)
     results_dic = dict()
 
     for filename in filename_list:
