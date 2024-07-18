@@ -61,6 +61,24 @@ def print_results(results_dic, results_stats_dic, model,
                               False doesn't print anything(default) (bool) 
     Returns:
            None - simply printing results.
-    """    
+    """
+    print("Summary results for model: ", model)
+    print("Number of Images: " + str(results_stats_dic['n_images']),
+          "Number of Dog Images: " + str(results_stats_dic['n_dogs_img']),
+          "Number of \"Not-a\" Dog Images: " + str(results_stats_dic['n_notdogs_img']), sep="\n")
+    
+    print('{0:.2f}'.format(results_stats_dic['pct_correct_dogs']) + "% Correct Dogs",
+           '{0:.2f}'.format(results_stats_dic['pct_correct_breed']) + "% Correct Breed",
+             '{0:.2f}'.format(results_stats_dic['pct_correct_notdogs']) + "% Correct \"Not-a\" Dog", sep="\n")
+    
+    if print_incorrect_dogs:
+        for key in results_dic:
+            if not (results_dic[key][3] == results_dic[key][4]):
+                print("Dog not matched correctly: ", key, " matched: ", results_dic[key][4], " actual: ", results_dic[key][3])
+
+    if print_incorrect_breed:
+        for key in results_dic:
+            if not results_dic[key][2]:
+                print("Image not matched correctly: ", key, " matched: ", results_dic[key][1], " actual: ", results_dic[key][0])
     None
                 

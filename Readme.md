@@ -11,3 +11,5 @@
 # TODO 4: add check is-a-dog for both label and classification - done and tested
 
 # TODO 5: add statistic calculation for match/is-a-dog match - done and tested
+
+# TODO 6: add statistic printing match/is-a-dog match - done and tested
