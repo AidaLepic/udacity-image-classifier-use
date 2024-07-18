@@ -46,10 +46,7 @@ def get_pet_labels(image_dir):
 
     for filename in filename_list:
       pet_label = strip_label(filename)
-      if pet_label not in results_dic:
-         results_dic[pet_label] = [filename]
-      else:
-         results_dic[pet_label].append(filename)
+      results_dic[filename] = [pet_label]
     
     return results_dic
 
