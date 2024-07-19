@@ -64,6 +64,5 @@ Number of "Not-a" Dog Images: 2
 100.00% Correct Dogs
 100.00% Correct Breed
 100.00% Correct "Not-a" Dog
-Image not matched correctly:  House_01.jpg  matched:  picket fence, paling  actual:  house
 
 ** Total Elapsed Runtime: 0:0:0

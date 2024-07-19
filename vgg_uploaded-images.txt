@@ -64,8 +64,7 @@ Number of "Not-a" Dog Images: 2
 50.00% Correct Dogs
 50.00% Correct Breed
 100.00% Correct "Not-a" Dog
-Dog not matched correctly:  Pug_02.jpg  matched:  False  actual:  True
-Image not matched correctly:  Pug_02.jpg  matched:  llama  actual:  pug
-Image not matched correctly:  House_01.jpg  matched:  maze, labyrinth  actual:  house
+Incorrect Dogs/Not Dogs Assignments
+Dog not matched correctly:  pug  matched:  llama  actual:  pug
 
 ** Total Elapsed Runtime: 0:0:0

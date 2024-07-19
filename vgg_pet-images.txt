@@ -322,10 +322,8 @@ Number of "Not-a" Dog Images: 10
 100.00% Correct Dogs
 93.33% Correct Breed
 100.00% Correct "Not-a" Dog
-Image not matched correctly:  Great_pyrenees_05367.jpg  matched:  kuvasz  actual:  great pyrenees
-Image not matched correctly:  cat_01.jpg  matched:  lynx  actual:  cat
-Image not matched correctly:  great_horned_owl_02.jpg  matched:  ruffed grouse, partridge, bonasa umbellus  actual:  great horned owl
-Image not matched correctly:  gecko_80.jpg  matched:  tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui  actual:  gecko
-Image not matched correctly:  Beagle_01170.jpg  matched:  walker hound, walker foxhound  actual:  beagle
+Incorrect Breeds Assignments
+Image not matched correctly:  great pyrenees  matched:  kuvasz  actual:  great pyrenees
+Image not matched correctly:  beagle  matched:  walker hound, walker foxhound  actual:  beagle
 
-** Total Elapsed Runtime: 0:0:5
+** Total Elapsed Runtime: 0:0:10

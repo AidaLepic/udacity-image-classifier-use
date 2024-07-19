@@ -322,15 +322,12 @@ Number of "Not-a" Dog Images: 10
 100.00% Correct Dogs
 80.00% Correct Breed
 100.00% Correct "Not-a" Dog
-Image not matched correctly:  Great_pyrenees_05367.jpg  matched:  kuvasz  actual:  great pyrenees
-Image not matched correctly:  gecko_02.jpg  matched:  alligator lizard  actual:  gecko
-Image not matched correctly:  Golden_retriever_05257.jpg  matched:  afghan hound, afghan  actual:  golden retriever
-Image not matched correctly:  cat_01.jpg  matched:  african hunting dog, hyena dog, cape hunting dog, lycaon pictus  actual:  cat
-Image not matched correctly:  great_horned_owl_02.jpg  matched:  ruffed grouse, partridge, bonasa umbellus  actual:  great horned owl
-Image not matched correctly:  gecko_80.jpg  matched:  tree frog, tree-frog  actual:  gecko
-Image not matched correctly:  Beagle_01141.jpg  matched:  english foxhound  actual:  beagle
-Image not matched correctly:  Boston_terrier_02285.jpg  matched:  basenji  actual:  boston terrier
-Image not matched correctly:  Golden_retriever_05182.jpg  matched:  tibetan mastiff  actual:  golden retriever
-Image not matched correctly:  Beagle_01170.jpg  matched:  walker hound, walker foxhound  actual:  beagle
+Incorrect Breeds Assignments
+Image not matched correctly:  great pyrenees  matched:  kuvasz  actual:  great pyrenees
+Image not matched correctly:  golden retriever  matched:  afghan hound, afghan  actual:  golden retriever
+Image not matched correctly:  beagle  matched:  english foxhound  actual:  beagle
+Image not matched correctly:  boston terrier  matched:  basenji  actual:  boston terrier
+Image not matched correctly:  golden retriever  matched:  tibetan mastiff  actual:  golden retriever
+Image not matched correctly:  beagle  matched:  walker hound, walker foxhound  actual:  beagle
 
 ** Total Elapsed Runtime: 0:0:1

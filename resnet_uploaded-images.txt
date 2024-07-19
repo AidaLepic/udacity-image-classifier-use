@@ -64,7 +64,5 @@ Number of "Not-a" Dog Images: 2
 100.00% Correct Dogs
 100.00% Correct Breed
 100.00% Correct "Not-a" Dog
-Image not matched correctly:  House_01.jpg  matched:  wall clock  actual:  house
-Image not matched correctly:  Elephant_01.jpg  matched:  tusker  actual:  elephant
 
 ** Total Elapsed Runtime: 0:0:0
