@@ -45,6 +45,9 @@ def get_pet_labels(image_dir):
     results_dic = dict()
 
     for filename in filename_list:
+      if filename.startswith("."):
+         continue
+      
       pet_label = strip_label(filename)
       results_dic[filename] = [pet_label]
     
