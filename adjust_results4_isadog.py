@@ -74,9 +74,8 @@ def adjust_results4_isadog(results_dic, dogfile):
       for line in f:
          dog_names[line.strip()] = 1    
 
-      for image in results_dic:
-         value = results_dic[image]
+      for value in results_dic.values():
          label = value[0]
          classified = value[1]
-         results_dic[image].extend([label in dog_names, classified in dog_names])
+         value.extend([label in dog_names, classified in dog_names])
     None

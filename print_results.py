@@ -72,13 +72,13 @@ def print_results(results_dic, results_stats_dic, model,
              '{0:.2f}'.format(results_stats_dic['pct_correct_notdogs']) + "% Correct \"Not-a\" Dog", sep="\n")
     
     if print_incorrect_dogs:
-        for key in results_dic:
-            if not (results_dic[key][3] == results_dic[key][4]):
-                print("Dog not matched correctly: ", key, " matched: ", results_dic[key][4], " actual: ", results_dic[key][3])
+        for value in results_dic.values():
+            if not (value[3] == value[4]):
+                print("Dog not matched correctly: ", value[0], " matched: ", value[4], " actual: ", value[3])
 
     if print_incorrect_breed:
-        for key in results_dic:
-            if not results_dic[key][2]:
-                print("Image not matched correctly: ", key, " matched: ", results_dic[key][1], " actual: ", results_dic[key][0])
+        for value in results_dic.values():
+            if not value[2]:
+                print("Image not matched correctly: ", value[0], " matched: ", value[1], " actual: ", value[0])
     None
                 
