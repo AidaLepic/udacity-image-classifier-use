@@ -22,7 +22,7 @@
 ##
 # Imports classifier function for using CNN to classify images 
 from classifier import classifier 
-from os import listdir
+from os import listdir, path
 
 
 # TODO 3: Define classify_images function below, specifically replace the None
@@ -70,7 +70,8 @@ def classify_images(images_dir, results_dic, model):
     image_list = listdir(images_dir)
 
     for image in image_list:
-        classifications = classifier(images_dir + image, model).lower().strip()
+        image_path = path.join(images_dir, image)
+        classifications = classifier(image_path, model).lower().strip()
         if image in results_dic:
             results_dic[image].extend([classifications, results_dic[image][0] in classifications])
     None 
