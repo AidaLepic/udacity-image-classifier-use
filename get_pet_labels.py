@@ -56,9 +56,5 @@ def get_pet_labels(image_dir):
 
 def strip_label(label):
    parts = label.lower().split("_")
-   result = ""
-   for part in parts:
-      if part.isalpha():
-         result += part + " "
-
+   result = " ".join([part for part in parts if part.isalpha()])
    return result.strip()
